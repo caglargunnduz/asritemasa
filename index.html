@@ -6,21 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Asrı Temaşa | Tiyatro Topluluğu – Oyunlar & Etkinlikler</title>
 
-<meta name="description"
-content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler ve tiyatro kültürü üzerine içerikler.">
-<link rel="canonical" href="https://asritemasa.com/">
-<meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler ve tiyatro kültürü üzerine içerikler.">
+  <link rel="canonical" href="https://asritemasa.com/">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="Asrı Temaşa | Tiyatro Topluluğu">
-<meta property="og:description" content="Asrı Temaşa tiyatro topluluğu. Oyunlar, etkinlikler ve sahne takvimi.">
-<meta property="og:url" content="https://asritemasa.com/">
-<meta property="og:type" content="website">
+  <meta property="og:description" content="Asrı Temaşa tiyatro topluluğu. Oyunlar, etkinlikler ve sahne takvimi.">
+  <meta property="og:url" content="https://asritemasa.com/">
+  <meta property="og:type" content="website">
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <style>
     :root {
@@ -2159,6 +2159,7 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         <div class="year-filter">
           <select id="yearFilter" onchange="filterByYear()">
             <option value="all">Tüm Yıllar</option>
+            <option value="2026">2026</option>
             <option value="2025">2025</option>
             <option value="2024">2024</option>
             <option value="2023">2023</option>
@@ -2505,6 +2506,7 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
       { ad: "Enes", soyad: "Altınok", rol: "Oyuncu", foto: "images/kadro/07- Enes Altınok - Oyuncu.jpg" },
       { ad: "Ahmet", soyad: "Çifter", rol: "Oyuncu", foto: "images/kadro/08- Ahmet Çifter - Oyuncu.jpg" },
       { ad: "Akif", soyad: "Şeflek", rol: "Oyuncu", foto: "images/kadro/09- Akif Şeflek - Oyuncu.jpg" },
+      { ad: "Hakan", soyad: "Akdeniz", rol: "Oyuncu", foto: "images/kadro/24- Hakan Akdeniz - Oyuncu.PNG" },
       { ad: "Bedirhan", soyad: "Kıy", rol: "Reji & Teknik", foto: "images/kadro/10- Bedirhan Kıy - Reji & Teknik.jpg" },
       { ad: "Eylül", soyad: "Ünal", rol: "Başkan Yardımcısı", foto: "images/kadro/11- Eylül Ünal - Başkan Yardımcısı.jpg" },
       { ad: "Havva Dilara", soyad: "Yüğrükel", rol: "Oyuncu", foto: "images/kadro/12- Havva Dilara Yüğrükel - Oyuncu.jpg" },
@@ -2516,10 +2518,9 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
       { ad: "Zehra", soyad: "Altunok", rol: "Oyuncu", foto: "images/kadro/18- Zehra Altunok - Oyuncu.jpg" },
       { ad: "İrem", soyad: "Günek", rol: "Oyuncu", foto: "images/kadro/19- İrem Günek - Oyuncu.jpg" },
       { ad: "Tuğba", soyad: "Kaya", rol: "Oyuncu", foto: "images/kadro/20- Tuğba Kaya - Oyuncu.jpg" },
-      { ad: "Yağmur", soyad: "Ağcakaya", rol: "Oyuncu", foto: "images/kadro/21- Yağmur Ağcakaya - Oyuncu.jpg" },
-      { ad: "Eylül Yağmur", soyad: "Torunoğlu", rol: "Oyuncu", foto: "images/kadro/22- Eylül Yağmur Torunoğlu - Oyuncu.jpg" },
-      { ad: "Ceylin Naz", soyad: "Canbaz", rol: "Oyuncu", foto: "images/kadro/23- Ceylin Naz Canbaz - Oyuncu.jpg" },
-      { ad: "Ezgi", soyad: "Nasuhoğlu", rol: "Oyuncu", foto: "images/kadro/24- Ezgi Nasuhoğlu - Oyuncu.jpg" }
+      { ad: "Eylül Yağmur", soyad: "Torunoğlu", rol: "Oyuncu", foto: "images/kadro/21- Eylül Yağmur Torunoğlu - Oyuncu.jpg" },
+      { ad: "Ceylin Naz", soyad: "Canbaz", rol: "Oyuncu", foto: "images/kadro/22- Ceylin Naz Canbaz - Oyuncu.jpg" },
+      { ad: "Elif Nur", soyad: "Topçu", rol: "Oyuncu", foto: "images/kadro/23- Elif Nur Topçu - Oyuncu.PNG" },
     ];
 
     // Yaklaşan Oyun Verisi
@@ -2532,7 +2533,40 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
     };
 
     const oyunlar = [
-      // 2025
+      //2026
+      {
+        ad: "KOALİSYON",
+        yil: 2026,
+        tarih: "22 Mayıs 2026",
+        saat: "19.30",
+        sahne: "Gültepe Kültür Merkezi",
+        yazar: "Ray Cooney",
+        turu: "Komedi",
+        sure: "2 Perde - 145 Dakika",
+        yonetmen: "Elif Nur Topçu",
+        sanatYonetmeni: "Enes Demirbilek",
+        ozet: "80'li yıllarda Thatcher döneminde görevde olan bir bakan, İşçi Partisi'nin sekreterlerinden biriyle bir gecelik kaçamak yapmak üzere bir otel odası tutar. Ancak otel odasında bir cesetle karşılaşınca olaylar içinden çıkılmaz bir hal alır. Söylenen yalanlar, oyundaki karışıklığın dozunu gittikçe artırır. Doğası gereği peşine düştüğü birincil hazlar nedeniyle, toplumsal konumundan kaynaklanan ikincil istekleri arasında sıkışıp kalan bakanın gülünç hali gözler önüne serilir.",
+        oyuncular: "Emircan Koyuncu, Enes Demirbilek, Yusuf Demirbilek, Onur Alp Derebaşı, Mustafa Kıy, İlbey Buğrahan Akı, Hilal Kanıgür, Elif Nur Topçu, Eylül Ünal, Ceylin Naz Canbaz, Eylül Yağmur Torunoğlu",
+        afis: "oyunlar/2026/KOALİSYON 2026/afiş/afiş.jpeg",
+        galeri: []
+      },
+      //2025
+      {
+        ad: "Çöpçüler Piyesi",
+        yil: 2025,
+        tarih: "19 Aralık 2025",
+        saat: "19.30",
+        sahne: "Gültepe Kültür Merkezi",
+        yazar: "ATST",
+        turu: "Komedi",
+        sure: "2 Perde - 150 Dakika",
+        yonetmen: "Yusuf Demirbilek",
+        sanatYonetmeni: "Enes Demirbilek",
+        ozet: "Şehrin ışıltılı maskesinin düştüğü, ihtişamın tükendiği son notadayız. Burası, vicdanın paslandığı ve unutuluşun bir dağ gibi yığıldığı bir yerdir. Atılan her eşya, kırılmış bir düş, ihanete uğramış bir yemindir. Bu devasa enkazın ortasında, hayatın sıfır noktasında, yedi kayıp ruh barınır.",
+        oyuncular: "Eylül Yağmur Torunoğlu, Hilal Kanıgür, Tuğba Kaya, İrem Günek, Yeşim Yetik, Zehra Altunok, Tuana Yaşar, Aleyna Şafak, Ceylin Naz Canbaz, Eylül Ünal, Akif Şeflek, Enes Altınok, Efe Çetinkaya, Onur Alp Derebaşı, Mustafa Kıy, Emircan Koyuncu, Enes Demirbilek, Yusuf Demirbilek",
+        afis: "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/afiş/WhatsApp Görsel 2025-11-24 saat 20.56.51_2010ba60.jpg",
+        galeri: ["oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0314.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0316.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0329.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0355.PNG", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0356.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0357.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0358.JPG.jpeg", "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/galeri/IMG_0359.JPG.jpeg"]
+      },
       {
         ad: "KAÇ BABA KAÇ",
         yil: 2025,
@@ -2544,7 +2578,7 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 120 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Dr. David Morgan, kariyerinin en önemli konferansına hazırlanmaktadır...",
+        ozet: "Dr. David Morgan, kariyerinin en önemli konferansına hazırlanmaktadır. Çalıştığı hastanenin doktorlar odasında yapacağı konuşmayı prova ederken, kariyerinin en önemli günü, hayatının en zor gününe dönüşür. Yıllar önce küçük bir kaçamak yaşadığı hemşire Tate, David'den olan kızı Leslie ile çıkagelir. David; yeni tanıştığı kızı, eski sevgilisi, polis komiseri, noel hazırlıkları, rektör ve karısı ile uğraşmak zorunda kalır. Hem de konferansına dakikalar kala... ",
         oyuncular: "Emircan Koyuncu, Enes Demirbilek, Mustafa Kıy, Akif Şeflek, İlbey Buğrahan Akı, Onur Alp Derebaşı, Elif Nur Topçu, Tuana Yaşar, Hilal Kanıgür, Elif Kansu, Havva Dilara Yüğrükel, Hale Özkan, İrem Günek, Eylül Yağmur Torunoğlu",
         afis: "oyunlar/2025/KAÇ BABA KAÇ 2025/afiş/WhatsApp Görsel 2025-12-02 saat 17.00.53_6f0fc205.jpg",
         galeri: ["oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0058.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0059.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0060.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0061.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0062.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0063.jpg", "oyunlar/2025/KAÇ BABA KAÇ 2025/galeri/IMG-20251205-WA0064.jpg"]
@@ -2560,8 +2594,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 145 Dakika",
         yonetmen: "Eylül Ünal",
         sanatYonetmeni: "Havva Dilara Yüğrükel",
-        ozet: "Bir kadın kocalardan ne kadar çekebilir ki? Yalanlar, entrikalar ve müzik!",
-        oyuncular: "Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür, Elif Nur Topçu, Enes Demirbilek, Emircan Koyuncu, Mustafa Kıy",
+        ozet: "Bir kadın kocalardan ne kadar çekebilir ki? Ya da farklı bir düzende kocalar kadınlardan? Yalanlar, entrikalar ve müzik! Heyecanı ve komediyi hiç kesmeyen oyun Kocalar Müşkülünü kaçırmamak için yerinizi şimdiden ayırtmayı unutmayın!",
+        oyuncular: "Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür, Elif Nur Topçu, Enes Demirbilek, Emircan Koyuncu, Mustafa Kıy, Batuhan Ünal, Veli Gündüz, Yusuf Demirbilek, Onur Alp Derebaşı",
         afis: "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/afiş/WhatsApp Görsel 2025-12-02 saat 17.00.53_3bb67912.jpg",
         galeri: ["oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/IMG-20251205-WA0051.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/IMG-20251205-WA0052.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/IMG-20251205-WA0053.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/IMG-20251205-WA0054.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/WhatsApp Görsel 2025-12-05 saat 21.20.16_3acf32cd.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/WhatsApp Görsel 2025-12-05 saat 21.20.16_8ee52ffb.jpg", "oyunlar/2025/KOCALAR MÜŞKÜLÜ 2025/galeri/WhatsApp Görsel 2025-12-05 saat 21.20.16_e6a45093.jpg"]
       },
@@ -2592,7 +2626,7 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 125 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Bir evlilik, iki gizli aşık, Kayserili bir baba, dedikodusu bitmeyen apartman...",
+        ozet: "Okurken evlenen bu iki genç için, 'Aile büyüklerinden gizli evlenmek' dersinin final sınavı biraz erken geldi gibi! Bir evlilik, iki gizli aşık, Kayserili bir baba, dedikodusu asla bitmeyen bir apartman ve gün yüzüne çıkmak için bekeleyen gırla yalan…",
         oyuncular: "Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür, Enes Demirbilek, Emircan Koyuncu, Mustafa Kıy",
         afis: "oyunlar/2025/THE EVLİLİK 2025/afiş/WhatsApp Görsel 2025-12-02 saat 17.00.53_5edbf836.jpg",
         galeri: ["oyunlar/2025/THE EVLİLİK 2025/galeri/IMG-20251205-WA0046.jpg", "oyunlar/2025/THE EVLİLİK 2025/galeri/IMG-20251205-WA0047.jpg", "oyunlar/2025/THE EVLİLİK 2025/galeri/IMG-20251205-WA0048.jpg", "oyunlar/2025/THE EVLİLİK 2025/galeri/IMG-20251205-WA0049.jpg", "oyunlar/2025/THE EVLİLİK 2025/galeri/IMG-20251205-WA0050.jpg"]
@@ -2608,26 +2642,10 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "1 Perde - 60 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Korkunun tiyatroyla buluştuğu, gerilimin nakış nakış işlendiği bir gece…",
+        ozet: "Bitmek bilmeyen bu heyecanı merak etmiyor musunuz? Korkunun tiyatroyla buluştuğu, gerilimin nakış nakış işlendiği, izleyenlerin tabularını yıktığı bir gece… ",
         oyuncular: "Emircan Koyuncu, Huzeyfe Sever",
         afis: "oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/afiş/WhatsApp Görsel 2025-12-02 saat 17.00.53_b0af9128.jpg",
-        galeri: []
-      },
-      {
-        ad: "ÇÖPÇÜLER PİYESİ",
-        yil: 2025,
-        tarih: "2025",
-        saat: "",
-        sahne: "",
-        yazar: "",
-        turu: "",
-        sure: "",
-        yonetmen: "",
-        sanatYonetmeni: "",
-        ozet: "",
-        oyuncular: "",
-        afis: "oyunlar/2025/ÇÖPÇÜLER PİYESİ 2025/afiş/WhatsApp Görsel 2025-11-24 saat 20.56.51_2010ba60.jpg",
-        galeri: []
+        galeri: ["oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/galeri/IMG_0093.png", "oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/galeri/IMG_0095.png", "oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/galeri/IMG_0096.png", "oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/galeri/IMG_0097.png", "oyunlar/2025/BİZİ ÇAĞIRIYORLAR 2025/galeri/IMG_0098.png"]
       },
 
       // 2024
@@ -2642,10 +2660,10 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 145 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "80'li yıllarda bir bakan, bir gecelik kaçamak için otel odası tutar. Ancak cesetle karşılaşınca olaylar karışır...",
-        oyuncular: "Emircan Koyuncu, Berke Cengiz, Huzeyfe Sever, Mustafa Kıy, Enes Demirbilek",
+        ozet: "80'li yıllarda Thatcher döneminde görevde olan bir bakan, İşçi Partisi'nin sekreterlerinden biriyle bir gecelik kaçamak yapmak üzere bir otel odası tutar. Ancak otel odasında bir cesetle karşılaşınca olaylar içinden çıkılmaz bir hal alır. Söylenen yalanlar, oyundaki karışıklığın dozunu gittikçe artırır. Doğası gereği peşine düştüğü birincil hazlar nedeniyle, toplumsal konumundan kaynaklanan ikincil istekleri arasında sıkışıp kalan bakanın gülünç hali gözler önüne serilir.",
+        oyuncular: "Emircan Koyuncu, Berke Cengiz, Huzeyfe Sever, Mustafa Kıy, Enes Demirbilek, Hakan Akdeniz, Ahmet Çifter, Elif Nur Topçu, Hilal Kanıgür, Havva Dilara Yüğrükel",
         afis: "oyunlar/2024/KOALİSYON 2024/afiş/WhatsApp Görsel 2025-12-02 saat 17.00.53_0122dd60.jpg",
-        galeri: ["oyunlar/2024/KOALİSYON 2024/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.15_86066b7f.jpg", "oyunlar/2024/KOALİSYON 2024/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.16_e522a136.jpg"]
+        galeri: ["oyunlar/2024/KOALİSYON 2024/galeri/IMG_0090.PNG", "oyunlar/2024/KOALİSYON 2024/galeri/IMG_0091.PNG", "oyunlar/2024/KOALİSYON 2024/galeri/IMG_0092.PNG", "oyunlar/2024/KOALİSYON 2024/galeri/IMG_0093.jpg", "oyunlar/2024/KOALİSYON 2024/galeri/IMG_0094.jpg"]
       },
       {
         ad: "GÖMME DOLAP",
@@ -2658,8 +2676,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 125 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "İyilik ve kötülüğün tek bir dolap etrafında döndüğü oyun.",
-        oyuncular: "Emircan Koyuncu, Enes Demirbilek, Mustafa Kıy, Onur Alp Derebaşı",
+        ozet: "Kriz anlarında şeytan ile melek yanınıza belirse hangisini dinlerdiniz? Acınız varken çıkarlarınızı mı düşünürsünüz? Yoksa yasınızı mı tutmayı tercih edersiniz? İyilik ve kötülüğün, çıkarların ve komedinin tek bir dolap etrafında döndüğü o oyun sizlerle…",
+        oyuncular: "Emircan Koyuncu, Enes Demirbilek, Mustafa Kıy, Onur Alp Derebaşı, Ahmet Çifter, Hakan Akdeniz, Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür",
         afis: "oyunlar/2024/GÖMME DOLAP 2024/afiş/WhatsApp Görsel 2025-12-01 saat 17.57.30_bb7332b5.jpg",
         galeri: ["oyunlar/2024/GÖMME DOLAP 2024/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.15_74556f3a.jpg", "oyunlar/2024/GÖMME DOLAP 2024/galeri/WhatsApp Görsel 2025-12-05 saat 20.52.14_0dcd505f.jpg", "oyunlar/2024/GÖMME DOLAP 2024/galeri/WhatsApp Görsel 2025-12-05 saat 20.52.14_ae351c5b.jpg"]
       },
@@ -2675,7 +2693,7 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Yusuf Demirbilek",
         ozet: "Dr. David Morgan'ın kariyerinin en önemli günü, hayatının en zor gününe dönüşür...",
-        oyuncular: "Emircan Koyuncu, İsmihan Demirezen, Efe Çetinkaya, Hilal Kanıgür, Mustafa Kıy",
+        oyuncular: "Emircan Koyuncu, İsmihan Demirezen, Efe Çetinkaya, Hilal Kanıgür, Mustafa Kıy, Onur Alp Derebaşı, Hakan Akdeniz, Berke Cengiz, Havva Dilara Yüğrükel",
         afis: "oyunlar/2024/KAÇ BABA KAÇ 2024/afiş/WhatsApp Görsel 2025-12-01 saat 17.53.04_ce70e26c.jpg",
         galeri: ["oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240521-WA0075.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240521-WA0077.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240521-WA0078.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240521-WA0079.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240521-WA0127.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20240522-WA0031.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0036.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0037.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0038.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0039.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0040.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0041.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0042.jpg", "oyunlar/2024/KAÇ BABA KAÇ 2024/galeri/IMG-20251205-WA0043.jpg"]
       },
@@ -2690,8 +2708,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 125 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Yusuf Demirbilek",
-        ozet: "Okurken evlenen iki genç için final sınavı erken geldi...",
-        oyuncular: "Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür, Yusuf Demirbilek, Emircan Koyuncu",
+        ozet: "Okurken evlenen bu iki genç için, 'Aile büyüklerinden gizli evlenmek' dersinin final sınavı biraz erken geldi gibi! Bir evlilik, iki gizli aşık, Kayserili bir baba, dedikodusu asla bitmeyen bir apartman ve gün yüzüne çıkmak için bekeleyen gırla yalan…",
+        oyuncular: "Eylül Ünal, Havva Dilara Yüğrükel, Hilal Kanıgür, Yusuf Demirbilek, Emircan Koyuncu, Mustafa Kıy, Efe Çetinkaya, Hakan Akdeniz, Bedirhan Kıy, Batuhan Ünal, Kemal Aslan",
         afis: "oyunlar/2024/THE EVLİLİK 2024/afiş/WhatsApp Görsel 2025-12-01 saat 17.48.51_9055fab8.jpg",
         galeri: ["oyunlar/2024/THE EVLİLİK 2024/galeri/IMG-20240307-WA0040.jpg", "oyunlar/2024/THE EVLİLİK 2024/galeri/IMG-20240307-WA0041.jpg"]
       },
@@ -2708,10 +2726,10 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 145 Dakika",
         yonetmen: "Eylül Ünal",
         sanatYonetmeni: "Yusuf Demirbilek",
-        ozet: "Mahallede kiralık bir konak, yeni kiracı tüm mahallenin kaderini değiştirir...",
-        oyuncular: "Eylül Ünal, Elif Nur Topçu, Havva Dilara Yüğrükel, Hilal Kanıgür, Yusuf Demirbilek",
+        ozet: "Bir mahalle düşünün mahallenin içinde bir kiralık konak. Peki yeni gelen kiracı tüm mahallenin kaderini değiştirebilir miydi? Bu nezih, sakin mahalle bir kadınla kaotik bir gidişata sürüklenebilir miydi?",
+        oyuncular: "Eylül Ünal, Elif Nur Topçu, Havva Dilara Yüğrükel, Hilal Kanıgür, Yusuf Demirbilek, Efe Çetinkaya, Veli Gündüz, Hakan Akdeniz, Batuhan Ünal, Yusuf Karadaş",
         afis: "oyunlar/2023/GARABET KONAĞI 2023/afiş/WhatsApp Görsel 2025-12-01 saat 17.47.38_d50b60b6.jpg",
-        galeri: ["oyunlar/2023/GARABET KONAĞI 2023/galeri/DSC09010.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/DSC09331.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231229-WA0019.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231229-WA0024.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0009.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0010.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0014.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0017.jpg"]
+        galeri: ["oyunlar/2023/GARABET KONAĞI 2023/galeri/DSC09010.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/DSC09331.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231229-WA0019.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231229-WA0024.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0009.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0010.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0014.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG-20231230-WA0017.jpg", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG_0087[1].PNG", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG_0088[1].PNG", "oyunlar/2023/GARABET KONAĞI 2023/galeri/IMG_0089[1].PNG"]
       },
       {
         ad: "KARMAKARIŞIK",
@@ -2724,8 +2742,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 145 Dakika",
         yonetmen: "Huzeyfe Sever",
         sanatYonetmeni: "Emircan Koyuncu",
-        ozet: "Bir kaçamak, bir yalan, bir ceset ve sürpriz yapan eş...",
-        oyuncular: "Emircan Koyuncu, Yusuf Demirbilek, Huzeyfe Sever, Mustafa Kıy",
+        ozet: "Küçük bir yalan sizden ne götürebilir ki, hiç hafife almayın belki de tüm ciddiyetinizi alıp, gülünç hallere sokabilir sizi. Bir kaçamak, bir yalan, bir ceset ve sürpriz yapan bir eş karmakarışık olmanın kaçınılmaz tarifi...",
+        oyuncular: "Emircan Koyuncu, Yusuf Demirbilek, Huzeyfe Sever, Mustafa Kıy, Elif Nur Topçu, Eylül Ünal, Hilal Kanıgür",
         afis: "oyunlar/2023/KARMAKARIŞIK 2023/afiş/WhatsApp Görsel 2025-12-01 saat 17.42.45_c87f4728.jpg",
         galeri: ["oyunlar/2023/KARMAKARIŞIK 2023/galeri/IMG-20230918-WA0095.jpg", "oyunlar/2023/KARMAKARIŞIK 2023/galeri/IMG-20230918-WA0101.jpg", "oyunlar/2023/KARMAKARIŞIK 2023/galeri/IMG-20230918-WA0107.jpg", "oyunlar/2023/KARMAKARIŞIK 2023/galeri/IMG-20230918-WA0109.jpg", "oyunlar/2023/KARMAKARIŞIK 2023/galeri/IMG-20230918-WA0110.jpg"]
       },
@@ -2740,8 +2758,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 125 Dakika",
         yonetmen: "Mustafa Kıy",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "İyiliğin ve kötülüğün bir elbise dolabı etrafında döndüğü oyun.",
-        oyuncular: "Emircan Koyuncu, Elif Nur Topçu, Huzeyfe Sever, Onur Alp Derebaşı",
+        ozet: "Şeytan mı? Yoksa melek mi? Size bir seçim yapma fırsatı tanınsaydı hangisini seçerdiniz? İyiliğin ve kötülüğün bir elbise dolabı etrafında döndüğü, insanın vefa ve çıkar çatışmasının gülünçlüğünü ortaya koyan bir oyun sizleri bekliyor… ",
+        oyuncular: "Emircan Koyuncu, Elif Nur Topçu, Huzeyfe Sever, Onur Alp Derebaşı, Efe Çetinkaya, Bedirhan Kıy, Eylül Ünal",
         afis: "oyunlar/2023/GÖMME DOLAP 2023/afiş/WhatsApp Görsel 2025-12-05 saat 20.12.39_7f89d5f5.jpg",
         galeri: ["oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.32.32_2aa55486.jpg", "oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.32.32_35403d08.jpg", "oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.32.32_537035d3.jpg", "oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.32.32_914a5ada.jpg", "oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.34.59_088b5419.jpg", "oyunlar/2023/GÖMME DOLAP 2023/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.17_6f50e598.jpg"]
       },
@@ -2756,24 +2774,24 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 130 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Keşanlı Ali ile kenar mahalle güzeli Zilha'nın imkansız aşkı...",
-        oyuncular: "Elif Nur Topçu, Eylül Ünal, Bedirhan Kıy, Enes Demirbilek",
+        ozet: "Bir yanda mertlik belası, bir yanda aşk yarası... İşlemediği bir cinayetten ötürü 'mahkûm ve kahraman' olan Keşanlı Ali ile kenar mahalle güzeli Zilha'nın imkansız aşkı. Masal kadar uzaktaki şehre tepeden bakan Sineklidağ'da geçen bol şarkılı bir kahramanlık parodisi. Haldun Taner'in epik başyapıtı, Türk tiyatrosunun eşsiz klasiği sizleri bekliyor…",
+        oyuncular: "Elif Nur Topçu, Eylül Ünal, Bedirhan Kıy, Enes Demirbilek, Efe Çetinkaya, Onur Alp Derebaşı, Huzeyfe Sever, Yalçın Şahin",
         afis: "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/afiş/WhatsApp Görsel 2025-12-02 saat 19.05.16_61098e43.jpg",
         galeri: ["oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.47_3fd3b30a.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_5db8ae09.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_8e532c91.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_9b6f5861.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_abe6094c.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_c9306b6c.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.15.48_f45efb2e.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.16.20_33742bf3.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-02 saat 19.16.20_6a910b7e.jpg", "oyunlar/2023/KEŞANLI ALİ DESTANI 2023/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.17_d5357352.jpg"]
       },
       {
         ad: "BİZİ ÇAĞIRIYORLAR",
         yil: 2023,
-        tarih: "2023",
-        saat: "",
-        sahne: "",
-        yazar: "",
+        tarih: "03 Şubat 2023",
+        saat: "19.00",
+        sahne: "İl Kültür Merkezi",
+        yazar: "Mustafa Kıy",
         turu: "Korku & Gerilim",
-        sure: "",
-        yonetmen: "",
-        sanatYonetmeni: "",
-        ozet: "",
-        oyuncular: "",
+        sure: "1 Perde 85 Dakika",
+        yonetmen: "Emircan Koyuncu",
+        sanatYonetmeni: "Enes Demirbilek",
+        ozet: "Bitmek bilmeyen bu heyecanı merak etmiyor musunuz? Korkunun tiyatroyla buluştuğu, gerilimin nakış nakış işlendiği, izleyenlerin tabularını yıktığı bir gece…",
+        oyuncular: "Yusuf Demirbilek, Emircan Koyuncu",
         afis: "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/afiş/WhatsApp Görsel 2025-12-02 saat 18.00.36_84108eac.jpg",
         galeri: ["oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.17_c347b6dd.jpg", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3065.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3252.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3277.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3288.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3294.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3301.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3356.JPG", "oyunlar/2023/BİZİ ÇAĞIRIYORLAR 2023/galeri/_MG_3372.JPG"]
       },
@@ -2790,8 +2808,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 145 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Bir kaçamak, bir yalan, bir ceset ve sürpriz yapan eş...",
-        oyuncular: "Huzeyfe Sever, Yusuf Demirbilek, Emircan Koyuncu, Veli Gündüz",
+        ozet: "Küçük bir yalan sizden ne götürebilir ki, hiç hafife almayın belki de tüm ciddiyetinizi alıp, gülünç hallere sokabilir sizi. Bir kaçamak, bir yalan, bir ceset ve sürpriz yapan bir eş karmakarışık olmanın kaçınılmaz tarifi...",
+        oyuncular: "Huzeyfe Sever, Yusuf Demirbilek, Emircan Koyuncu, Veli Gündüz, Eylül Ünal, Mustafa Kıy",
         afis: "oyunlar/2022/KARMAKARIŞIK 2022/afiş/WhatsApp Görsel 2025-12-02 saat 19.02.41_66a6f6b9.jpg",
         galeri: []
       },
@@ -2806,8 +2824,8 @@ content="Asrı Temaşa tiyatro topluluğu. Sahnelediğimiz oyunlar, etkinlikler 
         sure: "2 Perde - 120 Dakika",
         yonetmen: "Emircan Koyuncu",
         sanatYonetmeni: "Enes Demirbilek",
-        ozet: "Dr. David Morgan'ın kariyerinin en önemli günü, hayatının en zor gününe dönüşür...",
-        oyuncular: "Emircan Koyuncu, Enes Demirbilek, Zeynep Hasbutcu, Sena Hanilci",
+        ozet: "Dr. David Morgan, kariyerinin en önemli konferansına hazırlanmaktadır. Çalıştığı hastanenin doktorlar odasında yapacağı konuşmayı prova ederken, kariyerinin en önemli günü, hayatının en zor gününe dönüşür. Yıllar önce küçük bir kaçamak yaşadığı hemşire Tate, David'den olan kızı Leslie ile çıkagelir. David; yeni tanıştığı kızı, eski sevgilisi, polis komiseri, noel hazırlıkları, rektör ve karısı ile uğraşmak zorunda kalır. Hem de konferansına dakikalar kala...",
+        oyuncular: "Emircan Koyuncu, Enes Demirbilek, Zeynep Hasbutcu, Sena Hanilci, Sude Ekinci, Mustafa Kıy, Havva Dilara Yüğrükel, Onur Alp Derebaşı",
         afis: "oyunlar/2022/KAÇ BABA KAÇ 2022/afiş/WhatsApp Görsel 2025-12-02 saat 19.02.54_7a594cdc.jpg",
         galeri: ["oyunlar/2022/KAÇ BABA KAÇ 2022/galeri/WhatsApp Görsel 2025-12-02 saat 19.38.15_64e60db9.jpg", "oyunlar/2022/KAÇ BABA KAÇ 2022/galeri/WhatsApp Görsel 2025-12-02 saat 19.38.32_87172977.jpg", "oyunlar/2022/KAÇ BABA KAÇ 2022/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.15_1fdcae95.jpg", "oyunlar/2022/KAÇ BABA KAÇ 2022/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.18_6a403ac2.jpg", "oyunlar/2022/KAÇ BABA KAÇ 2022/galeri/WhatsApp Görsel 2025-12-05 saat 19.15.19_ed9f0d9f.jpg"]
       }
