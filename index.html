@@ -2282,11 +2282,11 @@
           <p class="contact-form-subtitle">Ekibimize katılmak için formu doldur.</p>
 
           <!-- Hidden iframe for form submission -->
-          <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe" onload="if(typeof onFormSubmit == 'function') onFormSubmit()"></iframe>
+          <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe"></iframe>
 <br>
           <form class="contact-form" id="applicationForm"
             action="https://docs.google.com/forms/d/e/1FAIpQLSciVJW4q0G57ypu6vJfX8jAHhrvQM4wE7hZTq5rQ0Iy6RNrjg/formResponse"
-            method="POST" target="hidden_iframe">
+            method="POST" target="hidden_iframe" onsubmit="onFormSubmitManual()">
             
             <!-- Bot koruması için dlut parametresi -->
             <input type="hidden" name="dlut" value="1778413860823">
@@ -3339,20 +3339,21 @@
     });
 
     // Form gönderim başarı kontrolü
-    function onFormSubmit() {
+    function onFormSubmitManual() {
       const successMessage = document.getElementById('successMessage');
       const submitBtn = document.getElementById('submitBtn');
       const form = document.getElementById('applicationForm');
 
-      // Sadece form gerçekten gönderildiyse
-      if (submitBtn && submitBtn.disabled) {
-        // Başarı mesajını göster
-        successMessage.classList.add('show');
+      // Butonu pasif yap (formun gönderildiğini simüle et)
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> GÖNDERİLİYOR...';
 
-        // Butonu gizle veya güncelle
+      // 1 saniye sonra başarı mesajını göster
+      setTimeout(() => {
+        successMessage.classList.add('show');
         submitBtn.style.display = 'none';
 
-        // Formu sıfırla (5 saniye sonra yeni başvuru yapılabilir)
+        // 5 saniye sonra formu sıfırla
         setTimeout(() => {
           form.reset();
           successMessage.classList.remove('show');
@@ -3360,7 +3361,7 @@
           submitBtn.disabled = false;
           submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> BAŞVURUYU GÖNDER';
         }, 5000);
-      }
+      }, 1000);
     }
 
     window.addEventListener('resize', updatePlaysPerView);
