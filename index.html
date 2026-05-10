@@ -2286,10 +2286,7 @@
 <br>
           <form class="contact-form" id="applicationForm"
             action="https://docs.google.com/forms/d/e/1FAIpQLSciVJW4q0G57ypu6vJfX8jAHhrvQM4wE7hZTq5rQ0Iy6RNrjg/formResponse"
-            method="POST" target="hidden_iframe" onsubmit="onFormSubmitManual()">
-            
-            <!-- Bot koruması için dlut parametresi -->
-            <input type="hidden" name="dlut" value="1778413860823">
+            method="POST" target="hidden_iframe" onsubmit="onFormSubmit()">
 
             <!-- İsim Soyisim & Telefon -->
             <div class="form-row">
@@ -3339,16 +3336,16 @@
     });
 
     // Form gönderim başarı kontrolü
-    function onFormSubmitManual() {
+    function onFormSubmit() {
       const successMessage = document.getElementById('successMessage');
       const submitBtn = document.getElementById('submitBtn');
       const form = document.getElementById('applicationForm');
 
-      // Butonu pasif yap (formun gönderildiğini simüle et)
+      // Butonu pasif yap
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> GÖNDERİLİYOR...';
 
-      // 1 saniye sonra başarı mesajını göster
+      // Başarı mesajını göster
       setTimeout(() => {
         successMessage.classList.add('show');
         submitBtn.style.display = 'none';
