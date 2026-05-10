@@ -2282,11 +2282,11 @@
           <p class="contact-form-subtitle">Ekibimize katılmak için formu doldur.</p>
 
           <!-- Hidden iframe for form submission -->
-          <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe"></iframe>
-
+          <iframe name="hidden_iframe" id="hidden_iframe" class="hidden-iframe" onload="if(typeof onFormSubmit == 'function') onFormSubmit()"></iframe>
+<br>
           <form class="contact-form" id="applicationForm"
             action="https://docs.google.com/forms/d/e/1FAIpQLSciVJW4q0G57ypu6vJfX8jAHhrvQM4wE7hZTq5rQ0Iy6RNrjg/formResponse"
-            method="POST">
+            method="POST" target="hidden_iframe">
             
             <!-- Bot koruması için dlut parametresi -->
             <input type="hidden" name="dlut" value="1778413860823">
