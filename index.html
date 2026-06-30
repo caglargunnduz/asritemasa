@@ -2435,7 +2435,23 @@
     </div>
   </div>
 
-  <!-- ==================== YAKLAŞAN OYUN MODAL ==================== -->
+  <!-- ==================== AÇILIŞ MODALI ==================== -->
+  <div id="acilisModal" class="upcoming-modal">
+    <div class="upcoming-modal-content" style="padding: 0; background: transparent; box-shadow: none; max-width: 450px;">
+      <span class="upcoming-modal-close" onclick="closeAcilisModal()" style="top: -15px; right: -15px; color: #fff; background: var(--accent); border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; z-index: 10; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); cursor: pointer;">&times;</span>
+      
+      <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; align-items: center; background: #fff;">
+        <img src="images/acilisModal/IMG_2935.JPG.jpeg" alt="Açılış Görseli" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        <div style="width: 100%; padding: 20px; display: flex; justify-content: center; background: var(--bg); border-top: 2px solid var(--gold);">
+          <a href="#iletisim" onclick="closeAcilisModal()" class="ticket-btn" style="position: relative; top: 0; right: 0; width: 100%; justify-content: center; font-size: 1.2rem; padding: 15px; box-shadow: 0 5px 15px rgba(230, 196, 79, 0.4); text-align: center;">
+            <i class="fa-solid fa-paper-plane"></i> Başvuru Yap
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SONRADAN AÇILACAK: Yaklaşan Oyun Modalı
   <div id="upcomingModal" class="upcoming-modal">
     <div class="upcoming-modal-content">
       <span class="upcoming-modal-close" onclick="closeUpcomingModal()">&times;</span>
@@ -2475,6 +2491,7 @@
       </a>
     </div>
   </div>
+  -->
 
 
   <div id="playModal" class="modal">
@@ -3187,7 +3204,41 @@
       updatePlaysCarouselPosition();
     }
 
-    // ==================== YAKLAŞAN OYUN MODAL FONKSİYONLARI ====================
+    // ==================== AÇILIŞ MODAL FONKSİYONLARI ====================
+    function showAcilisModal() {
+      const modal = document.getElementById('acilisModal');
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeAcilisModal() {
+      const modal = document.getElementById('acilisModal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    document.addEventListener('click', (e) => {
+      const modal = document.getElementById('acilisModal');
+      if (e.target === modal) {
+        closeAcilisModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('acilisModal');
+        if (modal && modal.classList.contains('active')) {
+          closeAcilisModal();
+          return;
+        }
+      }
+    });
+
+    /* SONRADAN AÇILACAK: YAKLAŞAN OYUN MODAL FONKSİYONLARI
     function showUpcomingModal() {
       const modal = document.getElementById('upcomingModal');
       const image = document.getElementById('upcomingImage');
@@ -3232,18 +3283,25 @@
         }
       }
     });
+    */
 
     document.addEventListener('DOMContentLoaded', () => {
       createCastCards();
       createPlaysCards();
       updatePlaysPerView();
 
-      // Yaklaşan Oyun Modalını Aç
+      // Açılış Modalını Aç
+      setTimeout(() => {
+        showAcilisModal();
+      }, 1500); // Sayfa yüklendikten 1.5 saniye sonra göster
+
+      /* SONRADAN AÇILACAK: Yaklaşan Oyun Modalını Aç
       if (yaklasanOyun && yaklasanOyun.afis) {
         setTimeout(() => {
           showUpcomingModal();
         }, 1500); // Sayfa yüklendikten 1.5 saniye sonra göster
       }
+      */
 
       // Telefon maskeleme
       const telefonInput = document.getElementById('telefonInput');
