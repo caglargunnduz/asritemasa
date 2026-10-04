@@ -2435,7 +2435,7 @@
     </div>
   </div>
 
-  <!-- ==================== AÇILIŞ MODALI ==================== -->
+  <!-- SONRADAN AÇILACAK: Açılış Modalı
   <div id="acilisModal" class="upcoming-modal">
     <div class="upcoming-modal-content" style="padding: 0; background: transparent; box-shadow: none; max-width: 450px;">
       <div style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; align-items: center; background: #fff;">
@@ -2449,8 +2449,9 @@
       </div>
     </div>
   </div>
+  -->
 
-  <!-- SONRADAN AÇILACAK: Yaklaşan Oyun Modalı
+  <!-- ==================== YAKLAŞAN OYUN MODAL ==================== -->
   <div id="upcomingModal" class="upcoming-modal">
     <div class="upcoming-modal-content">
       <span class="upcoming-modal-close" onclick="closeUpcomingModal()">&times;</span>
@@ -2490,7 +2491,6 @@
       </a>
     </div>
   </div>
-  -->
 
 
   <div id="playModal" class="modal">
@@ -2541,11 +2541,11 @@
 
     // Yaklaşan Oyun Verisi
     const yaklasanOyun = {
-      afis: "images/yaklasanOyun/afiş.jpeg",
-      tarih: "22 Mayıs 2026",
+      afis: "images/yaklasanOyun/afiş.jpg",
+      tarih: "23 Ekim 2026",
       saat: "19:30",
       konum: "Kayseri Gültepe Kültür Merkezi",
-      biletLink: "https://www.biletimgo.com/etkinlik/koalisyon-26854"
+      biletLink: "https://www.biletimgo.com/etkinlik/fehim-pasa-konagi-31650"
     };
 
     const oyunlar = [
@@ -2564,7 +2564,15 @@
         ozet: "80'li yıllarda Thatcher döneminde görevde olan bir bakan, İşçi Partisi'nin sekreterlerinden biriyle bir gecelik kaçamak yapmak üzere bir otel odası tutar. Ancak otel odasında bir cesetle karşılaşınca olaylar içinden çıkılmaz bir hal alır. Söylenen yalanlar, oyundaki karışıklığın dozunu gittikçe artırır. Doğası gereği peşine düştüğü birincil hazlar nedeniyle, toplumsal konumundan kaynaklanan ikincil istekleri arasında sıkışıp kalan bakanın gülünç hali gözler önüne serilir.",
         oyuncular: "Emircan Koyuncu, Enes Demirbilek, Yusuf Demirbilek, Onur Alp Derebaşı, Mustafa Kıy, İlbey Buğrahan Akı, Hilal Kanıgür, Elif Nur Topçu, Eylül Ünal, Ceylin Naz Canbaz, Eylül Yağmur Torunoğlu",
         afis: "oyunlar/2026/KOALİSYON 2026/afiş/afiş.jpeg",
-        galeri: []
+        galeri: [
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3652.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3654.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3655.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3656.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3657.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3658.JPG.jpeg",
+          "oyunlar/2026/KOALİSYON 2026/galeri/IMG_3659.JPG.jpeg"
+        ]
       },
       //2025
       {
@@ -3203,7 +3211,7 @@
       updatePlaysCarouselPosition();
     }
 
-    // ==================== AÇILIŞ MODAL FONKSİYONLARI ====================
+    /* SONRADAN AÇILACAK: AÇILIŞ MODAL FONKSİYONLARI
     function showAcilisModal() {
       const modal = document.getElementById('acilisModal');
       if (modal) {
@@ -3236,8 +3244,9 @@
         }
       }
     });
+    */
 
-    /* SONRADAN AÇILACAK: YAKLAŞAN OYUN MODAL FONKSİYONLARI
+    // ==================== YAKLAŞAN OYUN MODAL FONKSİYONLARI ====================
     function showUpcomingModal() {
       const modal = document.getElementById('upcomingModal');
       const image = document.getElementById('upcomingImage');
@@ -3282,25 +3291,24 @@
         }
       }
     });
-    */
 
     document.addEventListener('DOMContentLoaded', () => {
       createCastCards();
       createPlaysCards();
       updatePlaysPerView();
 
-      // Açılış Modalını Aç
+      /* SONRADAN AÇILACAK: Açılış Modalını Aç
       setTimeout(() => {
         showAcilisModal();
       }, 1500); // Sayfa yüklendikten 1.5 saniye sonra göster
+      */
 
-      /* SONRADAN AÇILACAK: Yaklaşan Oyun Modalını Aç
+      // Yaklaşan Oyun Modalını Aç
       if (yaklasanOyun && yaklasanOyun.afis) {
         setTimeout(() => {
           showUpcomingModal();
         }, 1500); // Sayfa yüklendikten 1.5 saniye sonra göster
       }
-      */
 
       // Telefon maskeleme
       const telefonInput = document.getElementById('telefonInput');
